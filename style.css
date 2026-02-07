@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4fbff;
+}
+
+header {
+  background: #1c671c;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main-img, .about-img {
+  display: block;
+  max-width: 600px;
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.menu-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  background: #5bc0de;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #31b0d5;
+}
+
+.cart-remove {
+  background: #5bc0de;
+  margin-left: 10px;
+}
+
+.cart-remove:hover {
+  background: #31b0d5;
+}
+
+.coworking {
+  color: #1E90FF;
+  font-weight: bold;
+  max-width: 200px;
+}
+
+.normal-hours {
+  color: #c64cc6;
+  font-weight: bold;
+}
+
+.beans-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.bean-card {
+  width: calc((100% - 40px)/3);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.bean-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.milk {
+  margin: 10px 0;
+}
+
+#cart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}

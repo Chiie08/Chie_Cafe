@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chie Cafe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Chie Cafe</h1>
+    <p>Community Coworking Coffee Shop</p>
+  </header>
+
+  <img src="images/cafe_mv_top.png" alt="カフェイメージ" class="main-img" />
+
+  <!-- About -->
+  <section>
+    <h2>About Chie Cafe</h2>
+    <p>
+      Chie Cafe は、コーヒーを楽しみながら仕事や勉強ができ、人と人が自然につながるコミュニティ型コワーキングカフェです。自家製の焙煎豆で丁寧に淹れたコーヒーをお楽しみいただけます。
+    </p>
+    <img src="/images/chie cafe cowoking .jpg" alt="コワーキングスペースの様子" class="about-img" />
+  </section>
+
+  <!-- Opening Hours -->
+  <section>
+    <h2>Opening Hours</h2>
+
+    <h3 class="coworking">コワーキングスペース利用時間</h3>
+    <ul class="coworking">
+      <li>月〜金：10:00〜17:00</li>
+    </ul>
+
+    <h3>通常営業時間</h3>
+    <ul class="normal-hours">
+      <li>月〜金：9:00〜18:00</li>
+      <li>土・日：10:00〜16:00</li>
+    </ul>
+  </section>
+
+  <!-- Coffee Beans -->
+  <section>
+    <h2>Coffee Beans</h2>
+    <img src="/images/cofee roster .webp" alt="コーヒー豆のイメージ" class="beans-main-img">
+
+    <div class="beans-container">
+      <div class="bean-card" data-price="1200">
+        <img src="/images/cofee beans 3.jpg" alt="ブラジル" class="bean-img">
+        <h3>ブラジル</h3>
+        <p>¥1,200</p>
+        <button class="add-to-cart">カートに追加</button>
+      </div>
+
+      <div class="bean-card" data-price="1300">
+        <img src="/images/cofee beans.jpg" alt="グアテマラ" class="bean-img">
+        <h3>グアテマラ</h3>
+        <p>¥1,300</p>
+        <button class="add-to-cart">カートに追加</button>
+      </div>
+
+      <div class="bean-card" data-price="1250">
+        <img src="/images/cofee beans 2.jpg" alt="エチオピア" class="bean-img">
+        <h3>エチオピア</h3>
+        <p>¥1,250</p>
+        <button class="add-to-cart">カートに追加</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Drink Menu -->
+  <section>
+    <h2>Menu</h2>
+    <p class="order-note">飲み物のオーダーは事前にオーダー決済できます！</p>
+    <ul id="menu">
+      <li data-price="250">
+        <img src="images/cafe_item_espresso.jpeg" class="menu-img" />
+        エスプレッソ ¥250
+        <button class="add-to-cart">カートに追加</button>
+      </li>
+      <li data-price="350">
+        <img src="images/cafe_item_dripcoffee.jpeg" class="menu-img" />
+        アメリカーノ ¥350
+        <button class="add-to-cart">カートに追加</button>
+      </li>
+      <li data-price="400">
+        <img src="images/cafe_item_cupp.jpeg" class="menu-img" />
+        カプチーノ ¥400
+        <button class="add-to-cart">カートに追加</button>
+      </li>
+      <li data-price="450">
+        <img src="images/cafe_item_latte.jpg" class="menu-img" />
+        カフェラテ ¥450
+        <button class="add-to-cart">カートに追加</button>
+      </li>
+      <li data-price="450">
+        <img src="images/cafe_item_macha.jpeg" class="menu-img" />
+        抹茶ラテ ¥450
+        <button class="add-to-cart">カートに追加</button>
+      </li>
+      <li data-price="450">
+        <img src="images/cafe_item_chai.jpeg" class="menu-img" />
+        チャイラテ ¥450
+        <button class="add-to-cart">カートに追加</button>
+      </li>
+    </ul>
+
+    <!-- Milk Options -->
+    <div class="milk">
+      <label>
+        <input type="radio" name="milk" value="normal" checked /> 通常ミルク
+      </label>
+      <label>
+        <input type="radio" name="milk" value="extra" /> オーツ・ソイミルク (+¥50)
+      </label>
+    </div>
+
+    <!-- Cart -->
+    <h3>カート</h3>
+    <ul id="cart"></ul>
+    <p>合計: ¥<span id="total">0</span></p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Find & Contact Us</h2>
+    <ul>
+      <li>電話: 03-1234-5678</li>
+      <li>メール: info@chefscafe.com</li>
+      <li>住所: カール・マルクス・シュトラーセ 77</li>
+    </ul>
+    <p>
+      Google Map：
+      <a href="https://share.google/bPPpKlFAM6CwYusZE" target="_blank">こちら</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Chie Cafe</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
