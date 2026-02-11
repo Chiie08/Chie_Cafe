@@ -17,14 +17,14 @@ function getMilkExtra() {
 // カートの合計更新
 function updateTotal() {
   let total = 0;
-  document.querySelectorAll("#cart li").forEach(item => {
+  document.querySelectorAll("#cart li").forEach((item) => {
     total += parseInt(item.dataset.price);
   });
   totalSpan.textContent = total;
 }
 
 // カートに追加
-menuItems.forEach(item => {
+menuItems.forEach((item) => {
   const button = item.querySelector(".add-to-cart");
   if (!button) return;
 
@@ -33,7 +33,8 @@ menuItems.forEach(item => {
     let price = parseInt(item.dataset.price) + getMilkExtra();
 
     // 名前取得（豆カードはh3、ドリンクはテキストから）
-    let name = item.querySelector("h3")?.textContent || item.textContent.split(" ¥")[0];
+    let name =
+      item.querySelector("h3")?.textContent || item.textContent.split(" ¥")[0];
 
     // カートに追加
     const li = document.createElement("li");
